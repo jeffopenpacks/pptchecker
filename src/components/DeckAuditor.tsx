@@ -106,6 +106,26 @@ export function DeckAuditor() {
           <strong className="font-medium text-zinc-800 dark:text-zinc-200">not stored</strong>.
         </p>
 
+        <div
+          className="mt-4 max-w-xl rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2.5 text-sm leading-relaxed text-zinc-700 dark:border-zinc-600 dark:bg-zinc-800/40 dark:text-zinc-300"
+          role="note"
+        >
+          <span className="font-medium text-zinc-900 dark:text-zinc-100">
+            Export source:
+          </span>{" "}
+          Most trustworthy results come from decks{" "}
+          <strong className="font-medium text-zinc-900 dark:text-zinc-50">
+            built or finalised in Microsoft PowerPoint or Google Slides
+          </strong>{" "}
+          (save or download as{" "}
+          <strong className="font-medium text-zinc-900 dark:text-zinc-50">.pptx</strong>
+          ). Tools such as{" "}
+          <strong className="font-medium text-zinc-900 dark:text-zinc-50">Canva</strong>{" "}
+          often emit markup that diverges from typical PowerPoint OOXML, so font and
+          compatibility hints here may be incomplete — when it matters, round-trip once through
+          PowerPoint or Slides before uploading.
+        </div>
+
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <label
             htmlFor={inputId}
@@ -154,7 +174,11 @@ export function DeckAuditor() {
             <StatCard
               label="Media footprint"
               value={`${(result.stats.totalMediaBytes / (1024 * 1024)).toFixed(1)} MB`}
-              hint={`${result.stats.mediaFileCount} file(s)`}
+              hint={
+                result.stats.avgMediaBytesPerSlide != null
+                  ? `${result.stats.mediaFileCount} file(s) · ~${(result.stats.avgMediaBytesPerSlide / (1024 * 1024)).toFixed(2)} MB/slide avg`
+                  : `${result.stats.mediaFileCount} file(s)`
+              }
             />
           </section>
 

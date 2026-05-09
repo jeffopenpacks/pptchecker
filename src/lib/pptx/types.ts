@@ -20,6 +20,8 @@ export interface DeckStats {
   referencedFontFamilies: string[];
   mediaFileCount: number;
   totalMediaBytes: number;
+  /** `ppt/media` total ÷ max(reported slides, 1); `null` when there is no media. */
+  avgMediaBytesPerSlide: number | null;
 }
 
 export type AnalyseSuccess = {
