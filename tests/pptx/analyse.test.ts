@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { strToU8, zipSync } from "fflate";
 
-import { analysePptx } from "./analyse";
+import { analysePptx } from "@/lib/pptx/analyse";
 
 function buildTinyPptx(options: {
   slideTypeface?: string;

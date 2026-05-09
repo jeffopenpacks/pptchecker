@@ -1,0 +1,2 @@
+# Python dependencies: none (this is a Node.js / Next.js project).
+# Install runtime and dev tools from package.json — run `npm install`.

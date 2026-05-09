@@ -7,12 +7,11 @@ node_modules/
 !.yarn/releases
 !.yarn/versions
 
-# Next.js (app under web/)
-web/.next/
-web/out/
+# Next.js
+.next/
+out/
 
 # Production / tooling outputs
-web/build/
 build/
 dist/
 coverage/
@@ -40,3 +39,4 @@ yarn-error.log*
 
 # TypeScript / caches
 *.tsbuildinfo
+next-env.d.ts
