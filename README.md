@@ -116,4 +116,4 @@ Root **`package.json`**, **`tsconfig.json`**, **`next.config.ts`**, **`vitest.co
  
 ## Reflection 
 - What worked, what failed, changes made, rationale. 
-It worked well, but I realise that pptx exported from canva doens't get audited properly as they don't match typical OOXML, so we added a warning to suggest only putting up pptx generated from typical apps like ms ppt or google slides.
+It worked well, but I realise that pptx exported from canva doens't get audited properly as they don't match typical OOXML, so we added a warning to suggest only putting up pptx generated from typical apps like ms ppt or google slides. Verdict is that this is not very useful for everyday use except for pointing out obvious flags. Need to be able to simulate the slides itself on various OS in order to be able to foresee issues.
