@@ -47,8 +47,9 @@ I used cursor agent for this.
 3) Set the scope to prevent scope creep
 4) First build
 5) Test with ppt
-6) Give feedback 
-7) Fix
+6) Give feedback
+7) Audit with agent
+8) Fix
 --- 
  
 ## Installation  
