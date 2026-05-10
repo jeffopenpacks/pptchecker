@@ -17,7 +17,8 @@ To help ppt designers flag out common pitfalls such as large image size, platfor
  
 ## Demo 
 - How does the solution work from the user’s perspective, covering the main steps from start to finish?  
-Once the user is done with the ppt, he/she can upload this to the webapp, it'll parse it then give a list of feedback, this can be exported into pdf, and user can send it to the presenter, who can do a quick double check on the flagged slides to double check.
+Once the user is done with the ppt, he/she can upload this to the webapp, it'll parse it then give a list of feedback, so the user can check and amend before sending
+
 - Provide screenshots, GIFs or demo video. 
 --- 
  
