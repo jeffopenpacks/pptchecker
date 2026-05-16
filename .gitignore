@@ -1,4 +1,4 @@
-# Dependencies
+# Dependencies (all packages in monorepo)
 node_modules/
 .pnp.*
 .yarn/*
@@ -7,9 +7,21 @@ node_modules/
 !.yarn/releases
 !.yarn/versions
 
-# Next.js
+# Next.js (all apps)
 .next/
 out/
+.turbo/
+
+# pdf-presenter — copied from pdfjs-dist on `npm install`
+pdf-presenter/public/pdf.worker.min.mjs
+pdf-presenter/public/standard_fonts/
+pdf-presenter/public/wasm/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
 
 # Production / tooling outputs
 build/
