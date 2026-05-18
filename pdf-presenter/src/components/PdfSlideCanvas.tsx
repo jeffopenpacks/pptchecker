@@ -105,11 +105,11 @@ export function PdfSlideCanvas({ doc, pageNumber, className }: Props) {
   return (
     <div
       ref={containerRef}
-      className={`relative flex h-full min-h-[200px] w-full items-center justify-center ${className ?? ""}`}
+      className={`relative h-full w-full ${className ?? ""}`}
     >
       <canvas
         ref={canvasRef}
-        className={`max-h-full max-w-full transition-opacity duration-150 ${visible ? "opacity-100" : "opacity-0"}`}
+        className={`block h-full w-full transition-opacity duration-150 ${visible ? "opacity-100" : "opacity-0"}`}
       />
       {renderError ? (
         <p
